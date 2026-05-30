@@ -14,4 +14,6 @@ internal data class EditFilterState(
     val packageName: String?,
     val tag: String?,
     val content: String?,
+    // Flipped to true by the reducer on any edit; used to confirm before discarding unsaved changes.
+    val isDirty: Boolean = false,
 )
